@@ -16,53 +16,41 @@
 </head>
 
 <body>
-  <header class="container hidden mx-auto my-8">
-    <div class="navbar px-10 relative hidden bg-[#F85559] rounded-full">
-      <div class="navbar-start">
-        <div class="dropdown lg:hidden">
-          <label tabindex="0" class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  w-52">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
+  <header class="container  mx-auto my-8">
+    <section class="container mx-auto my-6">
+      <nav class="lg:bg-[#F85559] p-1 rounded-full px-4">
+        <div class="flex items-center justify-between">
+          <!-- Left-side menu (visible on large screens) -->
+          <ul class="hidden md:flex space-x-4 gap-5 ml-2 text-white">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
           </ul>
-          <div class="navbar-end relative ">
-            <input class=" lg:w-80 p-2 rounded-full " type="text" placeholder="Search here">
-            <i class="fa-solid fa-magnifying-glass absolute right-5"></i>
+
+          <!-- Center logo -->
+          <div class="flex items-center gap-4">
+            <img src="./images/logo.png" class="w-12" alt="">
+            <h2 class="lg:text-white text-xl font-bold"> Fruit Burst</h2>
           </div>
 
-
+          <div class="hidden md:flex items-center">
+            <input type="text" class="relative px-4 py-2 rounded-full focus:outline-none" placeholder="Search here">
+            <i class="fa-solid fa-magnifying-glass absolute right-6"></i>
+          </div>
+          <!-- Hamburger menu (visible on small screens) -->
+          <div class="md:hidden flex items-center">
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="text-black cursor-pointer">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </label>
+          </div>
         </div>
-      </div>
-
-
-      <div class="navbar-start hidden lg:flex absolute ">
-        <ul class=" menu-horizontal gap-4  text-white text-lg px-1 ">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Shop</a></li>
-          <li><a>All Fruits</a></li>
-        </ul>
-      </div>
-
-
-      <div class=" lg:navbar-center flex gap-3 jus">
-        <img src="./images/logo.png" alt="">
-        <a class=" normal-case text-2xl font-medium text-white ">Fruit Burst</a>
-      </div>
-      <div class="navbar-end relative hidden ">
-        <input class=" lg:w-80 p-2 rounded-full " type="text" placeholder="Search here">
-        <i class="fa-solid fa-magnifying-glass absolute right-5"></i>
-      </div>
-
-
-    </div>
+      </nav>
+    </section>
     <!-- slide section -->
     <section class="my-10 hidden  ">
       <div class="carousel w-full min-h-[calc(100vh-76px)] relative">
@@ -212,7 +200,7 @@
                       </div>
                       <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
                     </div>
-                  </div>             
+                  </div>
                 </div>
               </div>
             </div>
@@ -255,11 +243,11 @@
                       </div>
                       <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
                     </div>
-                  </div>             
+                  </div>
                 </div>
               </div>
             </div>
-           
+
           </div>
         </div>
         <div class="card card-compact   py-8 space-y-3 bg-base-100 shadow-xl">
@@ -274,33 +262,33 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <p>Red Dragon</p>
-           <!-- The button to open modal -->
-           <label for="my_modal_8" class="btn mt-5">Details</label>
-           <input type="checkbox" id="my_modal_8" class="modal-toggle" />
-           <div class="modal">
-             <div class="modal-box max-h-96 lg:max-h-full">
-               <div class="text-center">
-                 <figure><img src="./images/fruit8.png" alt="" /></figure>
-                 <div class=" space-y-3 ">
-                   <h2 class="text-3xl font-bold">Red Dragon</h2>
-                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                   <div class="rating">
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                   </div>
-                   <div class="card-actions items-center justify-center gap-8">
-                     <div class="modal-action">
-                       <label for="my_modal_8" class="btn">Close</label>
-                     </div>
-                     <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
-                   </div>
-                 </div>             
-               </div>
-             </div>
-           </div>
+            <!-- The button to open modal -->
+            <label for="my_modal_8" class="btn mt-5">Details</label>
+            <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box max-h-96 lg:max-h-full">
+                <div class="text-center">
+                  <figure><img src="./images/fruit8.png" alt="" /></figure>
+                  <div class=" space-y-3 ">
+                    <h2 class="text-3xl font-bold">Red Dragon</h2>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions items-center justify-center gap-8">
+                      <div class="modal-action">
+                        <label for="my_modal_8" class="btn">Close</label>
+                      </div>
+                      <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card card-compact   py-8 space-y-3 bg-base-100 shadow-xl">
@@ -315,33 +303,33 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <p>Banana</p>
-         <!-- The button to open modal -->
-         <label for="my_modal_9" class="btn mt-5">Details</label>
-         <input type="checkbox" id="my_modal_9" class="modal-toggle" />
-         <div class="modal">
-           <div class="modal-box max-h-96 lg:max-h-full">
-             <div class="text-center">
-               <figure><img src="./images/fruit9.png" alt="" /></figure>
-               <div class=" space-y-3 ">
-                 <h2 class="text-3xl font-bold">Banana</h2>
-                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                 <div class="rating">
-                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                 </div>
-                 <div class="card-actions items-center justify-center gap-8">
-                   <div class="modal-action">
-                     <label for="my_modal_9" class="btn">Close</label>
-                   </div>
-                   <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
-                 </div>
-               </div>             
-             </div>
-           </div>
-         </div>
+            <!-- The button to open modal -->
+            <label for="my_modal_9" class="btn mt-5">Details</label>
+            <input type="checkbox" id="my_modal_9" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box max-h-96 lg:max-h-full">
+                <div class="text-center">
+                  <figure><img src="./images/fruit9.png" alt="" /></figure>
+                  <div class=" space-y-3 ">
+                    <h2 class="text-3xl font-bold">Banana</h2>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions items-center justify-center gap-8">
+                      <div class="modal-action">
+                        <label for="my_modal_9" class="btn">Close</label>
+                      </div>
+                      <button class="btn mt-6 text-white bg-[#F85559]	">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -458,7 +446,7 @@
               <div class="space-y-2">
                 <h2 class="text-3xl font-bold ">Fresh is Best</h2>
                 <hr class="border-gray-800 w-3/4 mx-auto">
-          
+
                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
@@ -469,7 +457,7 @@
               <div class="space-y-2">
                 <h2 class="text-3xl font-bold ">Gift Certificates</h2>
                 <hr class="border-gray-800 w-3/4 mx-auto">
-            
+
                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
@@ -488,7 +476,7 @@
               <div class="space-y-2 text-center lg:text-right">
                 <h2 class="text-3xl font-bold">Integrated Supplier</h2>
                 <hr class="border-gray-800 w-3/4 mx-auto">
-            
+
                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
@@ -499,7 +487,7 @@
               <div class="space-y-2 text-center lg:text-right">
                 <h2 class="text-3xl font-bold ">Sustainable Practice</h2>
                 <hr class="border-gray-800 w-3/4 mx-auto">
-          
+
                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
@@ -510,7 +498,7 @@
               <div class="space-y-2 text-center lg:text-right">
                 <h2 class="text-3xl font-bold ">The Benefits Only</h2>
                 <hr class="border-gray-800 w-3/4 mx-auto">
-          
+
                 <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               </div>
             </div>
