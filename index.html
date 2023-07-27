@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fruit Burst</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <!-- tailwind and daisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-  <header class="container  mx-auto my-8">
+  <header class="container  mx-auto md:my-8 lg:my-8">
     <section class="container mx-auto my-6">
       <nav class="lg:bg-[#F85559] p-1 rounded-full px-4">
         <div class="flex items-center justify-between">
@@ -35,7 +36,7 @@
           </div>
 
           <div class="hidden md:flex items-center">
-            <input type="text" class="relative px-4 py-2 rounded-full focus:outline-none" placeholder="Search here">
+            <input type="text" class="relative md:bg-pink-300 lg:bg-white px-4 py-2 rounded-full focus:outline-none" placeholder="Search here">
             <i class="fa-solid fa-magnifying-glass absolute right-6"></i>
           </div>
           <!-- Hamburger menu (visible on small screens) -->
@@ -65,8 +66,8 @@
             <button class="btn bg-[#F85559] border-none text-white">Shop Now</button>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <a href="#slide4" class="btn btn-circle ">❮</a>
+            <a href="#slide2" class="btn btn-circle ">❯</a>
           </div>
         </div>
         <!-- slide-2 -->
@@ -80,7 +81,7 @@
             <button class="btn bg-[#F85559] border-none text-white">Shop Now</button>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle ">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
@@ -126,7 +127,7 @@
   </header>
   <main class="">
     <!-- card-section -->
-    <section class="container mx-auto my-40">
+    <section class="container mx-auto md:my-40 lg:my-40">
       <div class="flex justify-center items-center flex-col lg:flex-row ">
         <div class="space-y-2 mb-10 text-center lg:text-left ">
           <h2 class="text-4xl font-extrabold ">Deal of the day</h2>
@@ -516,7 +517,7 @@
       <h3>Fruit Burst</h3>
     </div>
 
-    <div class="grid grid-cols-3 lg:grid-flow-col lg:gap-10 text-white">
+    <div class="flex flex-wrap justify-center lg:grid lg:grid-flow-col gap-10 lg:gap-20 text-white">
       <a class="link link-hover">Home</a>
       <a class="link link-hover">About Us</a>
       <a class="link link-hover">Shop</a>
